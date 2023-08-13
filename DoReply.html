@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Add a Reply</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 80vh;
+    "
+  >
+    <h1>Add a Reply</h1>
+    <form
+      style="border: 1px solid black; padding: 10px 20px; border-radius: 10px"
+      method="post"
+      action="addreply.php"
+    >
+      <p>
+        <strong>Your E-Mail Addres</strong><br />
+        <input
+          style="padding: 10px 20px; border-radius: 10px; outline: none"
+          type="email"
+          name="post_owner"
+          size="40"
+          maxlength="150"
+        />
+      </p>
+
+      <p>
+        <strong>Query Reply</strong><br />
+        <textarea
+          style="padding: 10px 20px; border-radius: 10px; outline: none"
+          name="post_text"
+          rows="8"
+          cols="40"
+          wrap="virtual"
+        ></textarea>
+      </p>
+
+      <p><input type="submit" name="submit" value="Add Reply" /></p>
+    </form>
+  </body>
+</html>
