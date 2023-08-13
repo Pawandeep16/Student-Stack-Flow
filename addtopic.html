@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Add a Topic</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+    "
+  >
+    <h1>Add a Topic</h1>
+    <form
+      style="border: 1px solid black; padding: 10px 20px; border-radius: 10px"
+      method="post"
+      action="addtopic.php"
+    >
+      <p>
+        <strong>Your E-Mail Addres</strong><br />
+        <input
+          style="padding: 10px 20px; border-radius: 10px; outline: none"
+          type="email"
+          name="topic_owner"
+          size="40"
+          maxlength="150"
+        />
+      </p>
+
+      <p>
+        <strong>Topic Title</strong><br />
+        <input
+          style="padding: 10px 20px; border-radius: 10px; outline: none"
+          type="text"
+          name="topic_title"
+          size="40"
+          maxlength="150"
+        />
+      </p>
+
+      <p>
+        <strong>Post Tex</strong><br />
+        <textarea
+          style="padding: 10px 20px; border-radius: 10px; outline: none"
+          name="post_text"
+          rows="8"
+          cols="40"
+          wrap="virtual"
+        ></textarea>
+      </p>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 10px;
+        "
+      >
+        <p><input type="submit" name="submit" value="Add Topic" /></p>
+        <button><a href="GetAllQueries.php">Show All Queries</a></button>
+      </div>
+    </form>
+  </body>
+</html>
